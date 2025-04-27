@@ -1,0 +1,521 @@
+<html lang="id" class="transition-colors duration-300" class="scroll-smooth">
+ <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+   Jokiin Aja - Beranda
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  
+  <style>
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .transition-colors {
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    canvas {
+      filter: drop-shadow(0 0 4px #3b82f6)
+              drop-shadow(0 0 10px #3b82f6)
+              drop-shadow(0 0 20px #3b82f6);
+    }
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+
+    #changing-text {
+      font-size: 24px;
+      color: #00ffcc;
+      font-family: monospace;
+      opacity: 0;
+      animation: fade 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+  </style>
+<!-- colom CSS -->
+
+ </head>
+ <body class="bg-gray-900 text-gray-100 transition-colors">
+  <div id="preloader">
+    <div id="changing-text">Loading...</div>
+  </div>  
+  <div id="particles-js" style="position: fixed; width: 100%; height: 100%; z-index: -1;"></div>
+
+  <!-- Navbar -->
+   <nav class="bg-white shadow-md fixed w-full z-50">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+       <div class="flex justify-between h-16 items-center">
+         <a class="flex items-center space-x-2" href="/index.html">
+           <img alt="Logo Jokiin_Aja, stylized text logo with modern font in blue and orange colors" class="h-10 w-10" height="40" src="https://storage.googleapis.com/a1aa/image/daab3d13-d668-4343-af4d-f6d238adbee9.jpg" width="40"/>
+           <span class="font-semibold text-xl text-blue-600">
+             Jokiin Aja
+            </span>
+          </a>
+          <div class="hidden md:flex space-x-8 font-semibold text-gray-700">
+            <a href="#tentang" class="hover:text-blue-600 transition">
+              Beranda
+            </a>
+            <a href="#tugas" class="hover:text-blue-600 transition">
+              Daftar Tugas
+            </a>
+      <a href="#form" class="hover:text-blue-600 transition">
+        Form Pemesanan
+      </a>
+      <a href="#harga" class="hover:text-blue-600 transition">
+        Daftar Harga
+      </a>
+      <a href="#kontak" class="hover:text-blue-600 transition">
+        Kontak
+      </a>
+    </div>            
+    <div class="md:hidden">
+      <button aria-label="Toggle menu" class="focus:outline-none" id="menu-btn">
+        <i class="fas fa-bars text-2xl text-gray-700">
+        </i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+  <a href="#tentang" class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50 font-semibold text-gray-700">
+    Beranda
+  </a>
+  <a href="#tugas" class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50 font-semibold text-gray-700">
+    Daftar Tugas
+  </a>
+  <a href="#form" class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50 font-semibold text-gray-700">
+    Form Pemesanan
+  </a>
+  <a href="#harga" class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50 font-semibold text-gray-700">
+    Daftar Harga
+  </a>
+  <a href="#kontak" class="block px-4 py-3 hover:bg-blue-50 font-semibold text-gray-700">
+    Kontak
+  </a>
+</div>
+</nav>
+<!-- Navbar -->
+
+ 
+<!-- Hero / Tentang Kami -->
+<section id="tentang" class="pt-24 bg-gradient-to-r from-blue-600 to-blue-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between min-h-[400px]">
+    <div class="text-white max-w-xl space-y-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+       Jasa Pembuatan Tugas Kuliah & sekolah
+       <br/>
+       Terpercaya dan Terjangkau
+      </h1>
+      <p class="text-lg md:text-xl font-light">
+       Solusi Cepat dan Mudah Untuk Menyelesaikan Tugas Kuliah dan Tugas Sekolah Anda Dengan Hasil Yang Sangat Memuaskan.
+      </p>
+      <a class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-gray-100 transition" href="https://wa.me/6282345984082?text=Halo%20admin%2C%20Saya%20Mau%20Tanya%20Soal%20Cara%20Melakukan%20Pemesanan%20nih!">
+       Cara Pesan
+      </a>
+     </div>
+     <div class="mt-10 md:mt-0">
+      <img alt="Ilustrasi mahasiswa sedang mengerjakan tugas di laptop dengan latar belakang meja belajar dan buku" class="rounded-lg shadow-lg w-full max-w-md" height="300" src="https://storage.googleapis.com/a1aa/image/7fe2eed4-dd71-40c7-e5f5-b2debc5d4677.jpg" width="400"/>
+     </div>
+    </div>
+   </section>
+  <!-- Hero / Tentang Kami -->
+
+    <!-- Daftar Tugas 1 -->
+    <section id="tugas" class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-4xl font-extrabold text-center mb-3">
+        Daftar Tugas <span class="text-blue-600">Paling Populer</span>
+      </h2>
+      <div class="w-14 h-1 bg-blue-600 mx-auto mb-10 rounded"></div>
+      <p class="max-w-3xl mx-auto text-center text-gray-200 text-lg leading-relaxed">
+        Jokiin Aja telah berkomitmen dan dipercaya untuk mengerjakan ratusan tugas
+        kuliah dan sekolah yang berbeda setiap bulannya. Berikut ini adalah beberapa tugas
+        paling populer dan sering dikerjakan versi Jokiin Aja selama beberapa bulan
+        terakhir. Yuk buruan cek apakah tugas kamu ada di daftar tugas populer.
+      </p>
+  
+      <div class="mt-16 grid gap-8 sm:grid-cols-1 md:grid-cols-3">
+        <article class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="flex items-center mb-4 text-[#d93a27]">
+            <i class="fas fa-book text-4xl mr-4"></i>
+            <h3 class="text-xl font-bold text-gray-900">Tugas Makalah</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-base">
+            Makalah adalah karya tulis pelajar atau mahasiswa sebagai laporan hasil pelaksanaan tugas sekolah atau
+            kuliah yang membahas suatu topik tertentu secara sistematis dan lengkap.
+          </p>
+        </article>
+  
+        <article class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="flex items-center mb-4 text-[#d93a27]">
+            <i class="fas fa-book text-4xl mr-4"></i>
+            <h3 class="text-xl font-bold text-gray-900">Tugas Jurnal</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-base">
+            Jurnal adalah publikasi ilmiah yang berisi kumpulan artikel dan biasanya muncul secara teratur, misal beberapa
+            kali dalam setahun.
+          </p>
+        </article>
+  
+        <article class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="flex items-center mb-4 text-[#d93a27]">
+            <i class="fas fa-book text-4xl mr-4"></i>
+            <h3 class="text-xl font-bold text-gray-900">Tugas Presentasi (PowerPoint)</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-base">
+            adalah tugas di mana kamu diminta untuk menyampaikan informasi atau materi tertentu dalam bentuk slide menggunakan Microsoft PowerPoint (atau aplikasi sejenis seperti Google Slides, Canva, dll).
+          </p>
+        </article>
+
+        <article class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="flex items-center mb-4 text-[#d93a27]">
+            <i class="fas fa-book text-4xl mr-4"></i>
+            <h3 class="text-xl font-bold text-gray-900">Tugas Codingan / Website</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-base">
+            Codingan website adalah kumpulan kode program yang digunakan untuk membangun dan menjalankan sebuah website.</p>
+        </article>
+
+        <article class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="flex items-center mb-4 text-[#d93a27]">
+            <i class="fas fa-book text-4xl mr-4"></i>
+            <h3 class="text-xl font-bold text-gray-900">Tugas Arduino /IoT</h3>
+          </div>
+          <p class="text-gray-700 leading-relaxed text-base">
+            adalah tugas di mana kamu diminta untuk membuat proyek teknologi yang melibatkan perangkat elektronik (seperti sensor, motor, LED) yang bisa berinteraksi dengan lingkungan fisik dan sering kali bisa terhubung ke internet atau dikendalikan lewat aplikasi.</p>
+        </article>
+
+      </div>
+    </section>
+<!-- Daftar Tugas 1 -->
+
+<!-- Form Pemesanan -->
+<section id="form" class="py-16 px-4">
+  <div class="bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 max-w-3xl mx-auto p-8 rounded-xl shadow-md text-gray-800 dark:text-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-4 flex items-center justify-center gap-2"><i data-feather="edit"></i> Form <span class="text-blue-600"> Pemesanan</span></h2>
+    <div class="w-14 h-1 bg-blue-600 mx-auto mb-10 rounded"></div>
+    <div class="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-md dark:bg-gray-900">
+      <form onsubmit="kirimKeWhatsapp(event)" class="space-y-4">
+        <!-- Form Pemesanan -->
+        
+        <!-- nama_lengkap -->
+        <div class="relative w-full">
+          <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Nama Pemesan" required 
+          class="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-400 dark:bg-gray-800 dark:border-gray-600 dark:text-white" />
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <svg class="w-5 h-5 text-gray-400 dark:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A9 9 0 0112 15a9 9 0 016.879 2.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+        </div>
+        <!-- nama_lengkap -->
+        
+        <!-- email -->
+        <div class="relative w-full">
+          <input type="email" id="email" name="email" placeholder="Email" required 
+          class="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-400 dark:bg-gray-800 dark:border-gray-600 dark:text-white" />
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <svg class="w-5 h-5 text-gray-400 dark:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+        </div>
+        <!-- email -->
+        
+        <!-- jenis_tugas -->
+        <div class="relative w-full">
+          <input type="text" id="jenis_tugas" name="jenis_tugas" placeholder="Jenis Tugas" required 
+          class="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-400 dark:bg-gray-800 dark:border-gray-600 dark:text-white" />
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <svg class="w-5 h-5 text-gray-400 dark:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a3 3 0 006 0M9 5h6" />
+            </svg>
+          </div>
+        </div>    
+        <!-- jenis_tugas -->
+        
+        <!-- deadline -->
+        <div class="relative w-full">
+          <input type="text" id="deadline" name="deadline" placeholder="Deadline, Hari dan Tanggal" required 
+          class="w-full h-12 pl-10 pr-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-400 dark:bg-gray-800 dark:border-gray-600 dark:text-white" />
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <svg class="w-5 h-5 text-gray-400 dark:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10m-9 4h4m-7 5h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+        </div>
+        <!-- deadline -->
+
+        <!-- deskripsi -->
+        <textarea id="deskripsi" name="deskripsi" placeholder="Deskripsi Tugas (Jelaskan Tugas Anda Secara Lengkap di Sini)" required class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-400 dark:bg-gray-800 dark:border-gray-600 dark:text-white"></textarea>
+        <!-- deskripsi -->
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full py-3 bg-orange-500 text-white rounded-xl hover:bg-orange-600 focus:ring-2 focus:ring-orange-400 transition">Kirim Pemesanan</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Submit Button -->
+
+<!-- Daftar Harga -->
+<section id="harga" class="py-16 px-4 fade-in">
+  <div class="bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 max-w-4xl mx-auto p-8 rounded-xl shadow-md text-gray-800 dark:text-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-6 flex items-center justify-center gap-2"><i data-feather="dollar-sign"></i> Daftar <span class="text-blue-600">Harga</span></h2>
+    <div class="w-14 h-1 bg-blue-600 mx-auto mb-10 rounded"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <div class="p-6 rounded-xl bg-gray-100 dark:bg-gray-900 shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">Makalah</h3>
+        <p class="text-sm mb-2">Harga mulai dari:</p>
+        <p class="text-2xl font-bold text-orange-500">Rp25.000</p>
+      </div>
+      
+      <div class="p-6 rounded-xl bg-gray-100 dark:bg-gray-900 shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">Jurnal</h3>
+        <p class="text-sm mb-2">Harga mulai dari:</p>
+        <p class="text-2xl font-bold text-orange-500">Rp50.000</p>
+      </div>
+      
+      <div class="p-6 rounded-xl bg-gray-100 dark:bg-gray-900 shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">Presentasi (PowerPoint)</h3>
+        <p class="text-sm mb-2">Harga mulai dari:</p>
+        <p class="text-2xl font-bold text-orange-500">Rp35.000</p>
+      </div>
+      
+      <div class="p-6 rounded-xl bg-gray-100 dark:bg-gray-900 shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">Coding / Website</h3>
+        <p class="text-sm mb-2">Harga mulai dari:</p>
+        <p class="text-2xl font-bold text-orange-500">Rp100.000</p>
+      </div>
+
+      <div class="p-6 rounded-xl bg-gray-100 dark:bg-gray-900 shadow-lg">
+        <h3 class="text-xl font-semibold mb-2">Arduino / IoT</h3>
+        <p class="text-sm mb-2">Harga mulai dari:</p>
+        <p class="text-2xl font-bold text-orange-500">Rp150.000</p>
+      </div>
+      
+    </div>
+    <p class="text-center mt-6 text-sm text-gray-500 dark:text-gray-400">"Harga dapat berubah tergantung tingkat kesulitan dan deadline".</p>
+  </div>
+</section>
+<!-- Daftar Harga -->
+
+<!-- Kontak -->
+<section id="kontak" class="py-20 bg-cover bg-center fade-in">
+  <div class="max-w-3xl mx-auto text-center">
+    <div class="bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 max-w-3xl mx-auto p-8 rounded-xl shadow-md text-gray-800 dark:text-gray-100">
+      <h2 class="text-3xl font-semibold mb-4">Hubungi <span class="text-blue-600">Kami</span></h2>
+      <div class="w-14 h-1 bg-blue-600 mx-auto mb-10 rounded"></div>
+      <p class="mb-4">Jika ada pertanyaan atau kamu mau Konsultasi tugas kamu silahkan, hubungi kami melalui tombol di bawah ini.</p>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-6">
+        
+        
+        <!-- Tombol WhatsApp -->
+        <a href="https://wa.me/6282345984082?text=Halo%20admin%2C%20Saya%20Mau%20Konsultasi%20Tugas%20Saya%20nih!" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2 transition">
+          <i class="fab fa-whatsapp text-xl"></i>
+          <span>WhatsApp</span>
+        </a>
+        <!-- Tombol WhatsApp -->
+        
+        
+        <!-- Tombol Email -->
+        <a href="mailto:jokiin.aja.76@gmail.com" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2 transition">
+          <i class="fas fa-envelope text-xl"></i>
+          <span>Email</span>
+        </a>
+      </div>
+
+      <!-- Tambahan Form Feedback dan Rating di Kontak -->
+      <div class="mt-10">
+      <h3 class="text-2xl font-bold mb-4">Beri Feedback dan Rating</h3>
+      <form onsubmit="kirimFeedback(event)" class="space-y-4">
+      
+      <!-- Feedback -->
+      <textarea id="kontak_feedback" name="kontak_feedback" placeholder="Tulis Tanggapan Kamu Mengenai Website Kami dan Jangan Lupa rating Pelayanan Kami..."
+      class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-400 dark:bg-gray-800 dark:border-gray-600 dark:text-white"></textarea>
+      
+      <!-- Rating Bintang -->
+      <div class="mb-6">
+      <label class="block text-gray-800 dark:text-white mb-2">Rating Pelayanan:</label>
+      <div id="kontak-rating-stars" class="flex justify-center space-x-2 text-3xl text-gray-400 cursor-pointer">
+      <span onclick="setKontakRating(1)">&#9733;</span>
+      <span onclick="setKontakRating(2)">&#9733;</span>
+      <span onclick="setKontakRating(3)">&#9733;</span>
+      <span onclick="setKontakRating(4)">&#9733;</span>
+      <span onclick="setKontakRating(5)">&#9733;</span>
+      </div>
+      <input type="hidden" id="kontak_rating" name="kontak_rating" value="0">
+      </div>
+      
+      <!-- Tombol Submit -->
+      <button type="submit" class="w-full py-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition">Kirim Feedback</button>
+      </form>
+      </div>
+
+    </div>
+  </div>
+  <!-- Tombol Email -->
+  
+</section>
+<!-- Kontak -->
+
+<!-- footer -->
+<footer class="bg-white text-gray-900 font-semibold py-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <p>&copy; 2025 Jokiin Aja. All rights reserved.</p>
+  </div>
+</footer>
+<!-- footer -->
+
+<!-- Particle.js background -->
+    <script>
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 60
+          },
+          "color": {
+            "value": ["#3b82f6", "#f97316", "#10b981"]
+          },
+          "size": {
+            "value": 3
+          }
+        }
+      });
+    </script>
+    
+<!-- Particle.js background -->
+
+<!-- JavaScript untuk WhatsApp -->
+<script>
+  function kirimKeWhatsapp(event) {
+    event.preventDefault();
+    
+    const nama = document.getElementById("nama_lengkap").value;
+    const email = document.getElementById("email").value;
+    const jenis = document.getElementById("jenis_tugas").value;
+    const deadline = document.getElementById("deadline").value;
+    const deskripsi = document.getElementById("deskripsi").value;
+    
+    const pesan = `Halo Admin%0ASaya ingin melakukan pemesanan dengan rincian berikut:%0A
+    Nama: ${nama}%0A
+    Email: ${email}%0A
+Jenis Tugas: ${jenis}%0A
+Deadline: ${deadline}%0A
+Deskripsi: ${deskripsi}%0A`;
+
+const noWa = "6282198902053"; // GANTI dengan nomor WA bisnis kamu
+const linkWa = `https://wa.me/${noWa}?text=${pesan}`;
+
+window.open(linkWa, "_blank");
+}
+</script>
+<!-- JavaScript untuk WhatsApp -->
+
+<!-- Feather Icons Script -->
+<script>
+  feather.replace()
+</script>
+<!-- Feather Icons Script -->
+
+<!-- hamberger menu -->
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+<!-- Hamberger menu -->
+
+<!-- Animasi Loading -->
+  <script>
+    const texts = ["Loading...", "Selamat Datang", "Jokiin Aja..."];
+    let index = 0;
+  
+    const textEl = document.getElementById("changing-text");
+  
+    setInterval(() => {
+      index = (index + 1) % texts.length;
+      textEl.textContent = texts[index];
+    }, 2000); // ganti teks tiap 2 detik
+  
+    // Hilangkan preloader saat halaman selesai dimuat
+    window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  setTimeout(() => {
+    preloader.style.opacity = "0";
+    setTimeout(() => {
+      preloader.style.display = "none";
+      }, 500); // waktu transisi opacity
+    }, 3000); // ⏳ delay sebelum preloader hilang (dalam milidetik)
+  });
+  </script>
+  <!-- Animasi loading  -->
+
+<!-- feedback & Rating bintang -->
+<script>
+    function setKontakRating(value) {
+      document.getElementById('kontak_rating').value = value;
+      const stars = document.querySelectorAll('#kontak-rating-stars span');
+      stars.forEach((star, index) => {
+        if (index < value) {
+          star.classList.add('text-yellow-400');
+          star.classList.remove('text-gray-400');
+        } else {
+          star.classList.add('text-gray-400');
+          star.classList.remove('text-yellow-400');
+        }
+      });
+    }
+    
+    function kirimFeedback(event) {
+      event.preventDefault();
+      const feedback = document.getElementById("kontak_feedback").value;
+      const rating = document.getElementById("kontak_rating").value || "Belum memberi rating";
+    
+      const pesan = `Halo Admin,%0ASaya mau kasih feedback nih:%0AFeedback: ${feedback}%0ARating: ${rating} ⭐`;
+    
+      const noWa = "6282345984082"; // Ganti sesuai nomor WA kamu
+      const linkWa = `https://wa.me/${noWa}?text=${pesan}`;
+    
+      window.open(linkWa, "_blank");
+    }
+    </script>    
+<!-- feedback & Rating bintang -->
+
+ </body>
+</html>
